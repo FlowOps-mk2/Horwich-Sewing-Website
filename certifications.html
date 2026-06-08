@@ -57,15 +57,17 @@
 <section>
   <div class="wrap">
     <div class="certs-grid">
-      <div class="certbox"><div class="c-ico">ISO<br>9001<br>:2015</div><div>
+      <div class="certbox"><div class="c-ico" role="button" tabindex="0" onclick="openCert('assets/certs/iso-9001.jpg')" onkeypress="if(event.key==='Enter')openCert('assets/certs/iso-9001.jpg')" title="View certificate">ISO<br>9001<br>:2015</div><div>
         <h3>ISO 9001:2015 — Quality management</h3>
-        <p>Demonstrates our commitment to consistent, customer-focused, continually-improving quality across every operation. Every garment is inspected to this standard, with full traceability through our SAP ERP system.</p>
+        <p>Demonstrates our commitment to consistent, customer-focused, continually-improving quality across every operation. Every product is inspected to this standard, with full traceability through our SAP ERP system.</p>
         <div class="meta">Certified since 13 Oct 2017 · SGS certificate SK17/2706</div>
+        <p class="certactions"><a href="assets/certs/iso-9001.jpg" onclick="openCert('assets/certs/iso-9001.jpg');return false;">View certificate →</a><a href="assets/certs/Horwich_ISO_9001_2015.pdf" target="_blank" rel="noopener">Download PDF ↓</a></p>
       </div></div>
-      <div class="certbox"><div class="c-ico">ISO<br>14001<br>:2015</div><div>
+      <div class="certbox"><div class="c-ico" role="button" tabindex="0" onclick="openCert('assets/certs/iso-14001.jpg')" onkeypress="if(event.key==='Enter')openCert('assets/certs/iso-14001.jpg')" title="View certificate">ISO<br>14001<br>:2015</div><div>
         <h3>ISO 14001:2015 — Environmental management</h3>
         <p>Reflects our dedication to minimising environmental impact, improving resource efficiency and embedding sustainability across production and waste management.</p>
         <div class="meta">Certified since 18 Sept 2023 · SGS certificate SK23/00000132</div>
+        <p class="certactions"><a href="assets/certs/iso-14001.jpg" onclick="openCert('assets/certs/iso-14001.jpg');return false;">View certificate →</a><a href="assets/certs/Horwich_ISO_14001_2015.pdf" target="_blank" rel="noopener">Download PDF ↓</a></p>
       </div></div>
     </div>
   </div>
@@ -84,7 +86,10 @@
       </ul>
       <p style="color:var(--grey);margin-top:16px">We manufacture under our own certifications and can be <strong>audited to your specific requirements</strong>, and arrange certification and testing for your end market where needed.</p>
     </div>
-    <div class="imgph">Certificate images / SGS &amp; ISO logos<br>(insert official badges + PDF links)</div>
+    <div class="certthumbs">
+      <a href="assets/certs/iso-9001.jpg" onclick="openCert('assets/certs/iso-9001.jpg');return false;" title="View ISO 9001 certificate"><img src="assets/certs/iso-9001-thumb.jpg" alt="ISO 9001:2015 certificate issued by SGS"><span>ISO 9001:2015 · SGS</span></a>
+      <a href="assets/certs/iso-14001.jpg" onclick="openCert('assets/certs/iso-14001.jpg');return false;" title="View ISO 14001 certificate"><img src="assets/certs/iso-14001-thumb.jpg" alt="ISO 14001:2015 certificate issued by SGS"><span>ISO 14001:2015 · SGS</span></a>
+    </div>
   </div>
 </section>
 
@@ -114,5 +119,7 @@
   </div>
 </footer>
 <script>document.querySelector('.nav-toggle').addEventListener('click',function(){var n=document.querySelector('nav.main');n.style.display=(n.style.display==='flex')?'none':'flex';n.style.flexDirection='column';n.style.position='absolute';n.style.top='62px';n.style.right='24px';n.style.background='#18483C';n.style.padding='16px 22px';n.style.borderRadius='8px';n.style.gap='14px';});</script>
+<div id="lb" class="lb" onclick="if(event.target===this)closeCert()"><span class="x" onclick="closeCert()" role="button" aria-label="Close">&times;</span><img id="lbimg" src="" alt="Horwich Sewing ISO certificate"></div>
+<script>function openCert(s){var l=document.getElementById('lb');document.getElementById('lbimg').src=s;l.classList.add('open');document.body.style.overflow='hidden';}function closeCert(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCert();});</script>
 </body>
 </html>
