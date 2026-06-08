@@ -228,3 +228,12 @@ footer nav a{display:block;padding:4px 0}
 .cardimg{width:100%;height:172px;object-fit:cover;border-radius:10px;display:block;margin-bottom:15px}
 .cardimg.panel{display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#1d3326,#0e1f17);color:#C09C60}
 .cardimg.panel svg{width:60px;height:60px}
+
+.ribbon{overflow:hidden;background:#0b1c16;border-bottom:1px solid rgba(192,156,96,.28)}
+.rib-track{display:flex;width:max-content;animation:ribscroll 36s linear infinite}
+.ribbon:hover .rib-track{animation-play-state:paused}
+.rib-item{position:relative;flex:0 0 auto;width:232px;height:130px;background-size:cover;background-position:center;text-decoration:none;border-right:1px solid rgba(11,28,22,.55)}
+.rib-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,28,22,.78),rgba(11,28,22,0) 58%)}
+.rib-item span{position:absolute;left:14px;bottom:11px;z-index:2;color:#fff;font-family:var(--stamp);font-size:.8rem;letter-spacing:.05em;text-transform:uppercase}
+@keyframes ribscroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.rib-track{animation:none}}
