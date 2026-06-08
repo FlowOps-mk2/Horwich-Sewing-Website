@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Contact &amp; Enquiries — Horwich Sewing SK</title>
 <meta name="description" content="Talk to Horwich Sewing SK about your technical or protective product. Offices in the UK and Slovakia — send your specification, volumes and timelines and we’ll come back to you.">
 <link rel="icon" href="assets/favicon.jpg">
@@ -60,6 +62,7 @@
       <div class="eyebrow">Make an enquiry</div>
       <h2 style="font-size:1.6rem;color:var(--green);font-weight:700;margin-bottom:18px">Send us your enquiry</h2>
       <form class="form" style="padding:0;border:0" onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <div class="row">
           <div><label>Name *</label><input type="text" required></div>
           <div><label>Company</label><input type="text"></div>
