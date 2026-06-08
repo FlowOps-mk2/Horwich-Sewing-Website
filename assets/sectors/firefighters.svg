@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#3a1f12"/><stop offset="0.55" stop-color="#21130c"/><stop offset="1" stop-color="#120a07"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.62" r="0.6"><stop offset="0" stop-color="#e0922e" stop-opacity="0.26"/><stop offset="1" stop-color="#e0922e" stop-opacity="0"/></radialGradient></defs>
+<rect width="300" height="500" fill="url(#g)"/><rect width="300" height="500" fill="url(#glow)"/>
+<g fill="none" stroke="#C09C60" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" transform="translate(150,300)">
+<path d="M-96,40 C-96,18 -72,8 -50,8 C-58,-58 -20,-92 0,-92 C20,-92 58,-58 50,8 C72,8 96,18 96,40 C96,52 84,58 70,58 L-70,58 C-84,58 -96,52 -96,40 Z" fill="#120a07" fill-opacity="0.5"/>
+<path d="M0,-92 C-6,-58 -6,-30 0,8 C6,-30 6,-58 0,-92 Z" stroke-width="5"/>
+<circle cx="0" cy="-26" r="9" fill="#C09C60" stroke="none"/>
+</g>
+<g stroke="#e0922e" stroke-width="10" opacity="0.18"><path d="M-20,500 L40,440 M40,500 L100,440 M100,500 L160,440 M160,500 L220,440 M220,500 L280,440 M280,500 L340,440"/></g>
+</svg>

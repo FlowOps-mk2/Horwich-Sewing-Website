@@ -43,14 +43,16 @@ nav.main a:hover,nav.main a.active{color:var(--gold)}
 .nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
 
 /* hero (home) */
-.hero{position:relative;color:#fff;background:linear-gradient(120deg,rgba(15,42,34,.94),rgba(15,42,34,.66)),url('https://www.horwichsewingsk.com/wp-content/uploads/background-material.jpg') center/cover no-repeat;padding:0}
-.hero .wrap{padding-top:100px;padding-bottom:108px;max-width:920px}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(120deg,rgba(11,28,22,.92),rgba(11,28,22,.50)),url('assets/photos/factory-hero.jpg') center/cover no-repeat;padding:0}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(120deg,rgba(11,28,22,.90),rgba(11,28,22,.48))}
+.hero .wrap{position:relative;z-index:2;padding-top:100px;padding-bottom:108px;max-width:920px}
 .hero h1{font-size:clamp(2.7rem,5.8vw,4.6rem);font-weight:600;color:#fff}
 .hero p{font-size:1.22rem;color:#eee7d8;margin:22px 0 32px;max-width:680px}
 .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
 
 /* interior page hero */
-.phero{color:#fff;background:linear-gradient(120deg,rgba(15,42,34,.95),rgba(15,42,34,.78)),url('https://www.horwichsewingsk.com/wp-content/uploads/background-material.jpg') center/cover no-repeat;padding:64px 0}
+.phero{color:#fff;background:linear-gradient(120deg,rgba(11,28,22,.93),rgba(11,28,22,.72)),url('assets/photos/machine-detail.jpg') center/cover no-repeat;padding:64px 0}
 .phero h1{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:600;color:#fff}
 .phero p{color:#e7ddca;max-width:640px;margin-top:14px;font-size:1.08rem}
 .crumbs{font-size:.82rem;color:#bfae8c;margin-bottom:14px;font-family:var(--stamp);letter-spacing:1px;text-transform:uppercase}
@@ -172,6 +174,21 @@ footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1.1fr 1.1fr;gap:36px;m
 .faq summary:after{content:"+";position:absolute;right:2px;top:12px;color:var(--gold);font-size:1.4rem;line-height:1}
 .faq[open] summary:after{content:"\2013"}
 .faq p{color:var(--grey);padding:0 0 16px;margin:0;max-width:760px}
+
+/* sector banners (mirrors factory window signage) */
+.sectors{background:var(--green-dark);color:#fff}
+.sectors .head h2{color:#fff}.sectors .lead{color:#a9c2b6}
+.sectorgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sector{position:relative;min-height:400px;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;padding:26px 18px 22px;text-align:center;border:1px solid rgba(192,156,96,.3);background-color:#12281f;background-size:cover;background-position:center;transition:.3s}
+.sector:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,14,.55) 0%,rgba(8,18,14,.12) 38%,rgba(8,18,14,.20) 100%)}
+.sector>*{position:relative;z-index:1}
+.sector:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.sector h3{font-family:var(--stamp);text-transform:uppercase;letter-spacing:2px;color:#fff;font-size:1.12rem;font-weight:600;line-height:1.15}
+.sector .srule{height:2px;width:46px;background:var(--gold);margin:9px auto 0}
+.sector small{display:block;color:#dcd2bb;font-size:.8rem;margin-top:10px;font-family:var(--body)}
+.sector .tagph{margin-top:auto;color:#bcae8f;font-size:.72rem;border:1px dashed rgba(192,156,96,.45);border-radius:4px;padding:5px 8px}
+@media(max-width:900px){ .sectorgrid{grid-template-columns:repeat(2,1fr)} }
+@media(max-width:560px){ .sectorgrid{grid-template-columns:1fr} }
 footer h4{font-family:var(--stamp);color:#fff;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;font-size:.95rem;font-weight:600}
 footer a:hover{color:var(--gold)}footer address{font-style:normal;line-height:1.7}
 footer nav a{display:block;padding:4px 0}
@@ -184,3 +201,5 @@ footer nav a{display:block;padding:4px 0}
   nav.main{display:none}
   .nav-toggle{display:block}
 }
+
+.shot{width:100%;height:100%;min-height:320px;object-fit:cover;border-radius:14px;display:block;box-shadow:0 18px 40px rgba(11,28,22,.18)}

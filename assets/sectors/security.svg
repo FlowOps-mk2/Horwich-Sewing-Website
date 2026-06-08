@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1c2230"/><stop offset="0.55" stop-color="#11151d"/><stop offset="1" stop-color="#080a0e"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.6" r="0.55"><stop offset="0" stop-color="#caa44e" stop-opacity="0.2"/><stop offset="1" stop-color="#caa44e" stop-opacity="0"/></radialGradient></defs>
+<rect width="300" height="500" fill="url(#g)"/><rect width="300" height="500" fill="url(#glow)"/>
+<g fill="none" stroke="#C09C60" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" transform="translate(150,300)">
+<path d="M0,-104 L80,-74 C80,-2 54,72 0,102 C-54,72 -80,-2 -80,-74 Z" fill="#080a0e" fill-opacity="0.55"/>
+<circle cx="0" cy="-18" r="20"/>
+<path d="M0,2 L0,40"/>
+<path d="M-30,46 C-30,18 -14,8 0,8 C14,8 30,18 30,46" stroke-width="5"/>
+</g>
+<g stroke="#caa44e" stroke-width="10" opacity="0.14"><path d="M-20,500 L40,440 M40,500 L100,440 M100,500 L160,440 M160,500 L220,440 M220,500 L280,440 M280,500 L340,440"/></g>
+</svg>
