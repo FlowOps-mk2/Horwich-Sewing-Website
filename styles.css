@@ -77,7 +77,8 @@ nav.main a:hover,nav.main a.active{color:var(--gold)}
 .card h3{font-size:1.22rem;color:var(--green);margin-bottom:10px;font-weight:600}
 .card p{color:var(--grey);font-size:.96rem}
 .card a.more{display:inline-block;margin-top:12px;color:#8a6b1f;font-weight:600;font-size:.9rem;font-family:var(--body)}
-.ico{width:46px;height:46px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--gold);font-family:var(--stamp);font-weight:600;font-size:1.05rem}
+.ico{width:42px;height:42px;display:flex;align-items:center;justify-content:flex-start;margin-bottom:14px;color:#8a6b1f}
+.ico svg{width:38px;height:38px;display:block}
 
 /* image placeholder */
 .imgph{background:linear-gradient(135deg,#21513f,#0f2a22);border-radius:10px;min-height:300px;display:flex;align-items:center;justify-content:center;color:#bcae8f;font-size:.85rem;text-align:center;padding:20px;border:1px dashed rgba(192,156,96,.45)}
