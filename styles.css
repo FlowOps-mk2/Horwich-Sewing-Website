@@ -224,3 +224,7 @@ footer nav a{display:block;padding:4px 0}
 .logo-tile{display:inline-flex;align-items:center;padding:13px 22px;border:1px solid var(--line);border-radius:10px;font-family:var(--stamp);font-weight:600;font-size:.92rem;letter-spacing:.02em;color:var(--green);background:#fbf8f1}
 .logo-tile.road{color:#8a6b1f;background:#fff;border-style:dashed}
 .trust-note{text-align:center;color:var(--grey);font-size:.83rem;line-height:1.6;margin:18px auto 0;max-width:720px}
+
+.cardimg{width:100%;height:172px;object-fit:cover;border-radius:10px;display:block;margin-bottom:15px}
+.cardimg.panel{display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#1d3326,#0e1f17);color:#C09C60}
+.cardimg.panel svg{width:60px;height:60px}
