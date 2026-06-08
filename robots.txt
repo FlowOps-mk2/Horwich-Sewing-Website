@@ -1,9 +1,9 @@
-# robots.txt — Horwich Sewing SK
+# robots.txt: Horwich Sewing SK
 # Default: allow all reputable crawlers
 User-agent: *
 Allow: /
 
-# AI search & answer engines — explicitly welcomed (we want to be cited)
+# AI search & answer engines: explicitly welcomed (we want to be cited)
 User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
