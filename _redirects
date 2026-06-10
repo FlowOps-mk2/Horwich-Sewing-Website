@@ -1,0 +1,11 @@
+# Redirects from old WordPress URLs to the new site (301 = permanent, preserves Google ranking)
+/why-horwich/          /about.html            301
+/why-horwich           /about.html            301
+/our-services/         /what-we-do.html       301
+/our-services          /what-we-do.html       301
+/crafter-by-horwich/   /crafter.html          301
+/crafter-by-horwich    /crafter.html          301
+/certifications/       /certifications.html   301
+/testimonials/         /about.html            301
+/testimonials          /about.html            301
+/contact/              /contact.html          301
